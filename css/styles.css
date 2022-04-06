@@ -1,0 +1,129 @@
+:root {
+	--Pale-blue: hsl(225, 100%, 94%);
+	--Bright-blue: hsl(245, 75%, 52%);
+	--Very-pale-blue: hsl(225, 100%, 98%);
+	--Desaturated-blue: hsl(224, 23%, 55%);
+	--Dark-blue: hsl(223, 47%, 23%);
+	--Shadow-light: rgba(0,0,0,0.1);
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('../images/pattern-background-desktop.svg');
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+
+	font-family: 'Red Hat Display', sans-serif;
+	background-color: var(--Pale-blue);
+	width: auto;
+}
+
+p {
+	color: var(--Desaturated-blue);
+	font-size: 16px;
+}
+
+h1 {
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+img {
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.frame {
+	background: #fff;
+	color: black;
+	width: 450px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	border-radius: 25px;
+	padding-bottom: 50px;
+	box-shadow:  0 20px 40px var(--Shadow-light);
+}
+
+.annual_plan {
+	width: 350px;
+	background: var(--Very-pale-blue);
+	border-radius: 10px;
+	margin: 20px auto 0 auto;
+	padding: 20px;
+	line-height: 1.5;
+}
+
+.icon_music {
+	float: left;
+	padding-right: 20px;
+}
+
+.plan_price {
+	text-align: left;
+ 	padding-left: 10px;
+ 	display: flex;
+ 	justify-content: space-between;
+}
+
+.plan_price_right {
+	align-self: center;
+}
+
+.price {
+	color: var(--Desaturated-blue);
+}
+
+.change_button {
+	color: var(--Bright-blue);
+	font-weight: 500;
+	text-decoration: underline;
+}
+
+.change_button:hover,
+.payment:hover,
+.cancel_order:hover {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.cancel_order:hover {
+	color: black;
+}
+
+.payment:hover {
+	background: var(--Dark-blue) ;
+}
+
+.payment {
+	display: block;
+	text-decoration: none;
+	font-weight: 900;
+	background: var(--Bright-blue);
+	color: #fff;
+	padding: 10px;
+	width: 350px;
+	border-radius: 10px;
+	margin: 30px auto;
+	box-shadow: 0 10px 25px var(--Desaturated-blue);
+}
+
+.cancel_order {
+	text-decoration: none;
+	font-weight: 900;
+ 	background: #fff;
+ 	color: var(--Desaturated-blue);
+}
+
